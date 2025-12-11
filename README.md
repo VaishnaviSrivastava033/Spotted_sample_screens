@@ -1,88 +1,135 @@
-# Spotted WhatsApp Message Management System
+# 📱 Spotted WhatsApp Message Management Demo  
+A Flutter-based demo application showcasing how Spotted merchants can manage WhatsApp message templates and view message logs.  
+This project was built as an assignment to demonstrate UI design, data handling, and workflow understanding based on the provided PRD and sample UI screens.
+
+---
+
+## 🚀 Overview  
+This demo simulates a simplified version of Spotted’s internal WhatsApp messaging system for merchants.  
+The app contains:
+
+- **A Templates Screen** for viewing available WhatsApp message templates  
+- **A Message Logs Screen** for tracking sent message records  
+- **Clean, pastel-themed UI** inspired by the sample Spotted merchant screens  
+- **Mock data only (no backend/API calls)**  
+- **Navigation setup for multi-screen flow**
+
+The goal is to demonstrate the UI structure, user experience, and how messaging workflows could be visualised in a full product.
+
+---
+
+## 🖼 UI Inspiration  
+The design is inspired by the Spotted UI samples provided, featuring:
+
+- Soft pastel cards (pink, yellow, green, blue)  
+- Rounded 20–24px corners  
+- Minimal shadows and clean spacing  
+- Friendly icons  
+- Simple, modern headers (no AppBars)  
+- Light background and airy layout  
+
+This ensures the app visually aligns with Spotted’s brand and design system.
+
+---
+
+## 🧩 Features
+
+### ⭐ Templates Screen
+- Displays a list of WhatsApp message templates  
+- Template details include:
+  - Name  
+  - Type (`text`, `media`, `interactive`)  
+  - Status (`approved`, `pending`, `rejected`)  
+  - Created & last-used timestamps  
+- Pastel-colored template cards inspired by Spotted’s UI  
+- Tap any card to open a bottom sheet with actions:
+  - View Template  
+  - Edit Template  
+  - Delete Template  
+
+---
+
+### ⭐ Message Logs Screen
+- Displays logs of messages sent using WhatsApp templates  
+- Each log shows:
+  - Customer number  
+  - Template name  
+  - Message status (`sent`, `delivered`, `read`, `failed`)  
+  - Timestamp  
+  - Optional error message  
+- Filter chips for quick sorting  
+- Beautiful pastel log cards with status icon and badge  
+- Modern, clean header layout  
+
+---
+
+## 🛠 Tech Stack
+
+- **Flutter 3.x**
+- **Dart**
+- **Intl package** (timestamp formatting)
+- **Material Design components**
+- **StatefulWidgets + Mock Data**
+
+No backend or API integration was required for this demo.
+
+---
+
+## 📂 Folder Structure
+lib/
+├── screens/
+│ ├── templates_screen.dart
+│ ├── message_logs_screen.dart
+├── main.dart
+└── widgets/ (optional future components)
 
 
-## Overview
+---
 
-This is a demonstration of a WhatsApp messaging system that allows Spotted merchants to manage templates and send messages to customers through Meta's WhatsApp Business API.
+## 🔄 Data Flow  
+### Templates  
+- Loaded locally through mock data  
+- Can be edited/viewed/deleted through UI actions  
+- Represents how merchants create or manage WhatsApp Business API templates  
 
-## What's Included
+### Message Logs  
+- Simulated list of sent messages  
+- Useful for illustrating post-message analytics  
+- Reflects how message delivery statuses would appear in the real product  
 
-1. **System Explanation** - Clear overview of the architecture
-2. **Architecture Diagram** - Visual representation of system flow
-3. **Flutter UI Screens** - Two fully functional UI screens
-   - Message Logs Screen
-   - Templates Management Screen
-4. **Backend API Routes** - RESTful API structure with authentication
+---
 
-## Key Features Demonstrated
+## 🎨 Design Choices  
+The UI is crafted to match the feel of Spotted’s internal tools:
 
-### Flutter Frontend
-- Clean, modern Material Design UI
-- State management with StatefulWidget
-- Responsive layouts
-- Filter and search functionality
-- Interactive cards and modals
-- Status indicators with color coding
+- Pastel color palette  
+- Elevated rounded cards  
+- Clean typography  
+- Declarative layout with padding and spacing  
+- Friendly visual hierarchy  
 
-### Backend API
-- RESTful API design
-- JWT authentication middleware
-- Role-based access control (Merchant/Admin)
-- Webhook handling for Meta API
-- Comprehensive error handling
-- Database-ready structure
+This aligns with modern mobile-first product design expectations.
 
-## Technical Stack
+---
 
-- **Frontend**: Flutter (Dart)
-- **Backend**: Node.js with Express(not implemented yet)
-- **Database**: MongoDB (structure defined, not implemented)
-- **Authentication**: JWT tokens(not implemented yet)
-- **External API**: Meta WhatsApp Business Cloud API(not implemented yet)
+## 🚧 Future Enhancements (If extended)
+- Add backend integration for real message logs  
+- Add WhatsApp API integration for template syncing  
+- Add user authentication  
+- Add pagination & filtering options  
+- Add template creation form  
+- Add analytics dashboard for sent messages  
 
-## Running the Project
+---
 
-### Flutter App
-```bash
-cd flutter_app
-flutter pub get
-flutter run
-```
+## 📬 Contact
+This project was created as part of an assignment/demo.  
+Feel free to reach out for improvements or collaboration.
 
-
-## API Endpoints
-
-### Messages
-- `GET /api/messages/logs` - Fetch message logs
-- `POST /api/messages/send` - Send a message
-- `GET /api/messages/stats` - Get statistics
-
-### Templates
-- `GET /api/templates` - List all templates
-- `POST /api/templates` - Create new template
-- `PUT /api/templates/:id` - Update template
-- `DELETE /api/templates/:id` - Delete template
-
-### Webhooks
-- `GET /api/webhooks/meta` - Verify webhook
-- `POST /api/webhooks/meta` - Receive status updates
-
-## Design Decisions
-
-1. **Shared Backend**: Both Merchant App and Admin Panel use the same API
-2. **Webhook-Driven**: Real-time updates from Meta instead of polling
-3. **Template-Based**: All messages must use pre-approved templates
-4. **Role-Based Access**: Merchants see only their data, admins see all
-
-## Future Enhancements
-
-- Complete database integration
-- Meta API integration
-- Scheduled messaging
-- Advanced analytics
-- Multi-language support
 
 ## Contact
 
 Vaishnavi Srivastava  
 vaishnavisrivastav033@gmail.com 
+
+Made with ❤️ using Flutter
