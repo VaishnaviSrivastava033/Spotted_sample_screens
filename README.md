@@ -84,7 +84,36 @@ lib/
 └── widgets/ (optional future components)
 
 
----
+# ▶️ How to Run the Flutter App
+
+### **Prerequisites**
+Make sure you have installed:
+
+- Flutter SDK  
+- Dart SDK  
+- Android Studio or Xcode (for emulators)  
+- VS Code or Android Studio as your editor  
+
+Verify Flutter installation:
+
+```bash
+flutter doctor
+```
+1️⃣ Clone the Repository
+git clone <repo-url>
+cd <project-folder>
+
+2️⃣ Install Dependencies
+
+Run:
+
+flutter pub get
+
+3️⃣ Run on Emulator or Device
+
+Start your emulator → then run:
+
+flutter run
 
 ## 🔄 Data Flow  
 ### Templates  
