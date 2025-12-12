@@ -28,7 +28,16 @@ The design is inspired by the Spotted UI samples provided, featuring:
 - Simple, modern headers (no AppBars)  
 - Light background and airy layout  
 
-This ensures the app visually aligns with Spotted’s brand and design system.
+
+
+<img width="958" height="437" alt="image" src="https://github.com/user-attachments/assets/825207c1-960f-4f69-adca-1e51f16b28eb" />
+
+<img width="959" height="439" alt="image" src="https://github.com/user-attachments/assets/6d64904b-171c-47ba-9f5b-03fe06585acc" />
+
+<img width="959" height="446" alt="image" src="https://github.com/user-attachments/assets/75ba6ba8-8494-41ac-af1a-505cb3440b66" />
+
+
+
 
 ---
 
